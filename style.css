@@ -7,11 +7,225 @@ body {
 }
 
 header {
-  background: #004aad;
-  color: white;
-  padding: 40px;
+   /* Dark purple */
+  /* background: linear-gradient(#520d2dfb, #c771a7fb); */
+  color: white;              /* Makes the text readable */
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #0b1345fb;
+}
+
+
+
+#about {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-box {
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(#75356ffb, #0b646cfb);
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-box h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-box p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.about-box:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(135deg, #6e3068fb, #0a5577);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.projects-section {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
   text-align: center;
 }
+
+.projects-section h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  background-image: url('prosthtic.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.project-content {
+  position: relative;
+  z-index: 1;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  z-index: 0;
+  border-radius: 16px;
+}
+
+.project-card h3 {
+  font-size: 26px;
+  color: #0c0202;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  font-size: 16px;
+  color: #000000;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to right, #05504e, #157db9);
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.read-more-btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(to right, #220a4d, #640646);
+}
+
+
+.ecosentinel-card {
+  background-image: url('ssatellite.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.ecosentinel-card .project-content h3,
+.ecosentinel-card .project-content p {
+  color: white;
+}
+
+
+
+
+
+/* Logo Placement */
+.logo-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.logo.right {
+  float: right;
+}
+
+/* Heading and NCAI link */
+.project-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.ncai-link {
+  text-decoration: none;
+  color: purple;
+  font-weight: bold;
+}
+
+.ncai-link:hover {
+  color: darkviolet;
+}
+
+/* Description Paragraph */
+.project-description {
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* image gallery */
+
+.image-gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+
+
+
 
 section {
   padding: 20px 40px;
@@ -25,9 +239,130 @@ section {
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-footer {
+.completed-projects-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center; /* center heading */
+}
+
+.completed-projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.gradient-card {
+  background: linear-gradient(135deg, #d5a1fd, #c2e9fb);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: #222;
+  text-align: center; /* center text inside card */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center content horizontally */
+  justify-content: center; /* center vertically if needed */
+  transition: transform 0.3s ease;
+}
+
+.gradient-card:hover {
+  transform: scale(1.02);
+}
+
+.gradient-card .project-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.gradient-card .project-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  max-width: 700px;
+}
+
+.gradient-card .read-more-btn {
+  display: inline-block;
+  background: #160361;
+  color: rgb(253, 253, 253);
+  padding: 8px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+  font-weight: normal;
+
+}
+
+.gradient-card .read-more-btn:hover {
+  background: #950a85;
+}
+
+.contact-footer {
+  padding: 30px 10px;
   text-align: center;
-  padding: 20px;
-  background: #ddd;
+  background-color: #f9f9f9;
+}
+
+.connect-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.connect-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  color: #491b77;
+  margin: 0;
+  padding-bottom: 5px;
+  font-weight: bold;
+
+  
+}
+
+.linkedin-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #302691; /* Dark text */
+  text-decoration: none;
+}
+
+.linkedin-name:hover {
+  text-decoration: underline;
+}
+
+.linkedin-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.all-projects-btn-wrapper {
+  text-align: center;
   margin-top: 20px;
 }
+
+.all-projects-btn {
+  display: inline-block;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.all-projects-btn:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+
+

@@ -2,46 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TrillionDollarBaby Portfolio</title>
+  <title>AyeshaPortfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Hi, I'm Ayesha Khan 👩‍💻</h1>
-    <p>AI & ML Enthusiast | Developer | Student</p>
+    <p><p>Deep Learning Researcher | Large Model Architect | Developer | Student </p></p>
   </header>
 
   <section id="about">
+  <div class="about-box">
     <h2>About Me</h2>
-    <p>I am passionate about building AI systems that solve real-world problems. Currently working on projects like crop yield prediction, violence detection, and prosthetic control using EMG data.</p>
-  </section>
+        <p>
+          I'm an AI enthusiast pursuing a Bachelor's in Artificial Intelligence. 
+          My core focus lies in solving real-world challenges using deep learning, 
+          machine learning, and state-of-the-art AI frameworks. I specialize in 
+          Natural Language Processing, working extensively with Neural Networks, CNNs, 
+          Transformers, Retrieval-Augmented Generation (RAG), Agentic AI, and Generative AI systems. 
+          I'm passionate about pushing the boundaries of what's possible through intelligent models 
+          that impact daily life.
+        </p>
+  </div>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
+<section class="projects-section">
+  <h2>Ongoing Projects</h2>
+
+  <div class="project-card">
+    <div class="project-content">
+      <h3>Prosthetic Arm Control with AI</h3>
+      <p>Developing an intelligent prosthetic arm controlled using EMG signals and AI. Using deep learning models for real-time gesture recognition and control.</p>
+      <a href="prosthetic-arm.html" class="read-more-btn">Read More</a>
+    </div>
+  </div>
+</section>
+
+<div class="project-card ecosentinel-card">
+  <div class="project-content white-text">
+    <h3>ECOSENTINEL</h3>
+    <p>An AI-powered system to monitor and prevent deforestation using satellite imagery and real-time alerts.</p>
+    <a href="ecosentinel.html" class="read-more-btn">Read More</a>
+  </div>
+</div>
+
+
+
+
+
+
+  </div>
+
+<section class="completed-projects-section">
+  <h2>Completed Projects</h2>
+
+  <div class="project-card gradient-card">
+    <div class="project-content">
       <h3>Crop Yield Prediction</h3>
-      <p>Predicting wheat and rice yields using ML algorithms on Pakistan soil & weather data.</p>
+      <p>This project predicts crop yield using machine learning techniques based on soil characteristics, weather conditions, and crop data. The goal is to help farmers and policymakers make better data-driven decisions to improve agricultural productivity and food security.</p>
+      <a href="https://github.com/ayeshuukhan/Predict-Crop-Yeild" class="read-more-btn">GitHub Repo</a>
     </div>
+  </div>
 
-    <div class="project">
-      <h3>Violence Detection in CCTV</h3>
-      <p>Detecting violent intent using multimodal video and audio data with X3D, TimeSformer, YAMNet.</p>
+  <div class="project-card gradient-card">
+    <div class="project-content">
+      <h3>Aquavision</h3>
+      <p>AquaVision-YOLOv11 is a custom-trained object detection model developed to accurately identify six marine species—fish, shark, penguin, puffin, starfish, and stingray—from underwater imagery. Leveraging the power of YOLOv11, this model is optimized for real-time performance, making it ideal for applications in marine research, environmental monitoring, and educational tools. With its high accuracy and speed, AquaVision-YOLOv11 contributes to advancing oceanic studies and raising awareness about marine biodiversity.</p>
+      <a href="https://github.com/ayeshuukhan/AquaVision-YOLO/tree/main" class="read-more-btn">GitHub Repo</a>
     </div>
-    
-    <div class="project">
-      <h3>Prosthetic Arm Control</h3>
-      <p>Using EMG signals and ViT model to control a robotic arm based on hand gestures.</p>
+  </div>
+
+  <div class="project-card gradient-card">
+    <div class="project-content">
+      <h3>CO₂ Emission Estimator</h3>
+      <p>This mini project focuses on predicting the carbon dioxide (CO₂) emissions of vehicles using a linear regression model. The dataset used contains model-specific information about fuel consumption and estimated CO₂ emissions for new light-duty vehicles available for retail sale in Canada. To ensure consistency across model years, the fuel consumption data from 1995 to 2014 has been adjusted using the 5-cycle testing method. The goal of the project is to analyze the relationship between engine size and CO₂ emissions, and to build a predictive model that estimates emissions based on a vehicle’s engine size.</p>
+      <a href="https://github.com/ayeshuukhan/CO2-Emission-Estimator" class="read-more-btn">GitHub Repo</a>
     </div>
-  </section>
+  </div>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: your.email@example.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-  </section>
+  <div class="project-card gradient-card">
+    <div class="project-content">
+      <h3>Birds Classification</h3>
+      <p>This project implements a bird species classification system using the AlexNet architecture in PyTorch. It involves model training, evaluation on test data, and comprehensive performance analysis through metrics like accuracy, precision, recall, and F1-score. Additionally, the project includes visualizations such as training loss curves and a confusion matrix to better interpret the model’s effectiveness and learning behavior.</p>
+      <a href="https://github.com/ayeshuukhan/Bird-Species-Classification-AlexNet-PyTorch" class="read-more-btn">GitHub Repo</a>
+    </div>
+  </div>
 
-  <footer>
-    <p>© 2025 TrillionDollarBaby</p>
-  </footer>
-</body>
-</html>
+  <div class="all-projects-btn-wrapper">
+  <a href="https://github.com/ayeshuukhan" class="all-projects-btn">Discover My All Projects</a>
+</div>
+
+
+
+
+</section>
+
+
+<footer class="contact-footer">
+  <div class="connect-me">
+    <p class="connect-text">Connect with me</p>
+    <a href="https://www.linkedin.com/in/ayesha-khan-6762071b4" target="_blank" class="linkedin-name">
+      Ayesha Khan
+      <img src="linkedin-icon.png" alt="LinkedIn" class="linkedin-icon">
+    </a>
+  </div>
+</footer>
+
+
